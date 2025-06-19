@@ -1,0 +1,6 @@
+jwt:
+  secret: XxYyZz1234567890AbCdEfGhIjKlMnOpQ
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
