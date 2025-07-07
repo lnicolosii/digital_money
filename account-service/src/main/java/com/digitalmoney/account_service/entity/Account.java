@@ -1,18 +1,24 @@
 package com.digitalmoney.account_service.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter
+import java.util.List;
+
 @Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "accounts")
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "account_id")
-    private Long accountId;
+    private Long id;
     @Column(nullable = false, unique = true, length = 22)
     private String cvu;
     @Column(nullable = false, unique = true)
@@ -22,13 +28,11 @@ public class Account {
     @Column(name = "user_id", nullable = false, unique = true)
     private Long userId;
 
-    public Account() {
-    }
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "account")
+    @JsonIgnore
+    private List<Card> cards;
 
-    public Account(Long accountId, String cvu, String alias, Long userId) {
-        this.accountId = accountId;
-        this.cvu = cvu;
-        this.alias = alias;
-        this.userId = userId;
-    }
+    @OneToMany(mappedBy = "account")
+    @JsonIgnore
+    private List<Transaction> transactions;
 }

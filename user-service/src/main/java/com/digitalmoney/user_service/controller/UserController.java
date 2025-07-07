@@ -1,6 +1,7 @@
 package com.digitalmoney.user_service.controller;
 
 import com.digitalmoney.user_service.controller.requestDto.UserCreateDTO;
+import com.digitalmoney.user_service.controller.requestDto.UserUpdateDto;
 import com.digitalmoney.user_service.dto.UserDto;
 import com.digitalmoney.user_service.dto.UserResponseDto;
 import com.digitalmoney.user_service.service.IUserService;
@@ -9,8 +10,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Objects;
 
 @Slf4j
 @RestController
@@ -23,24 +22,31 @@ public class UserController {
     }
 
     @PostMapping
-    public ResponseEntity<?> createUser(@Valid @RequestBody UserCreateDTO data) throws Exception {
-        log.info(String.valueOf(data));
-        if (Objects.isNull(data)) {
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-        }
-        return ResponseEntity.status(HttpStatus.CREATED).body(this.userService.createUser(data));
+    public ResponseEntity<UserDto> createUser(@Valid @RequestBody UserCreateDTO data) {
+        log.info("User creation request received for email: {}", data.getEmail());
+        UserDto user = this.userService.createUser(data);
+        return ResponseEntity.status(HttpStatus.CREATED).body(user);
+    }
+
+    @PatchMapping("/{userId}")
+    public ResponseEntity<UserResponseDto> updateUser(@Valid @RequestBody UserUpdateDto data, @PathVariable Long userId) {
+        log.info("User update request received for user ID: {}", userId);
+        UserResponseDto user = this.userService.updateUser(data, userId);
+        return ResponseEntity.ok(user);
     }
 
     @GetMapping
     public ResponseEntity<UserDto> findByEmail(@RequestParam String email) {
-        log.info(String.valueOf(email));
-        return new ResponseEntity<>(this.userService.findByEmail(email), HttpStatus.OK);
+        log.info("Find user by email request: {}", email);
+        UserDto user = this.userService.findByEmail(email);
+        return ResponseEntity.ok(user);
     }
 
     @GetMapping("/{userId}")
-    public ResponseEntity<?> findByUserId(@PathVariable String userId) throws Exception {
-        log.info(String.valueOf(userId));
-        return new ResponseEntity<>(this.userService.findByUserId(userId), HttpStatus.OK);
+    public ResponseEntity<UserResponseDto> findByUserId(@PathVariable Long userId) {
+        log.info("Find user by ID request: {}", userId);
+        UserResponseDto user = this.userService.findByUserId(userId);
+        return ResponseEntity.ok(user);
     }
 
 }

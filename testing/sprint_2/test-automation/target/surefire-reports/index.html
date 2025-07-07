@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" class="navigator-link">
+              <span class="suite-name border-passed">Digital Money Sprint 2 Smoke Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Digital_Money_Sprint_2_Smoke_Test_Suite" class="navigator-link ">
+                    <span>E:\Escritorio\B.specialist\desafio-profesional\digital_money\testing\sprint_2\test-automation\src\test\resources\testng-smoke.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Digital_Money_Sprint_2_Smoke_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Digital_Money_Sprint_2_Smoke_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Digital_Money_Sprint_2_Smoke_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Digital_Money_Sprint_2_Smoke_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Digital_Money_Sprint_2_Smoke_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Digital_Money_Sprint_2_Smoke_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">19 methods,   19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" class="hide-methods passed suite-Digital_Money_Sprint_2_Smoke_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Digital_Money_Sprint_2_Smoke_Test_Suite -->
+                      <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" class="show-methods passed suite-Digital_Money_Sprint_2_Smoke_Test_Suite"> (show)</a> <!-- show-methods passed suite-Digital_Money_Sprint_2_Smoke_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Digital_Money_Sprint_2_Smoke_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.InfrastructureSmokeTests" class="method navigator-link" hash-for-method="testCORSHeaders">testCORSHeaders</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.CardManagementSmokeTests" class="method navigator-link" hash-for-method="testCreateCardWithInvalidAccountId">testCreateCardWithInvalidAccountId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.CardManagementSmokeTests" class="method navigator-link" hash-for-method="testCreateCardWithValidData">testCreateCardWithValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.CardManagementSmokeTests" class="method navigator-link" hash-for-method="testDeleteCard">testDeleteCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.InfrastructureSmokeTests" class="method navigator-link" hash-for-method="testEurekaServiceRegistration">testEurekaServiceRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.InfrastructureSmokeTests" class="method navigator-link" hash-for-method="testGatewayAuthenticationFilter">testGatewayAuthenticationFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.InfrastructureSmokeTests" class="method navigator-link" hash-for-method="testGatewayRoutingForCardEndpoints">testGatewayRoutingForCardEndpoints</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.CardManagementSmokeTests" class="method navigator-link" hash-for-method="testGetCardsByAccountId">testGetCardsByAccountId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.CardManagementSmokeTests" class="method navigator-link" hash-for-method="testGetCardsWithInvalidAccountId">testGetCardsWithInvalidAccountId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.CardManagementSmokeTests" class="method navigator-link" hash-for-method="testGetSpecificCard">testGetSpecificCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.AuthenticationSmokeTests" class="method navigator-link" hash-for-method="testInvalidTokenValidation">testInvalidTokenValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.InfrastructureSmokeTests" class="method navigator-link" hash-for-method="testServiceHealthCheck">testServiceHealthCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.UserManagementSmokeTests" class="method navigator-link" hash-for-method="testUpdateAccountAlias">testUpdateAccountAlias</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.UserManagementSmokeTests" class="method navigator-link" hash-for-method="testUpdateAccountWithInvalidUserId">testUpdateAccountWithInvalidUserId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.UserManagementSmokeTests" class="method navigator-link" hash-for-method="testUpdateUserProfileWithValidData">testUpdateUserProfileWithValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.UserManagementSmokeTests" class="method navigator-link" hash-for-method="testUpdateUserWithInvalidId">testUpdateUserWithInvalidId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.AuthenticationSmokeTests" class="method navigator-link" hash-for-method="testValidTokenValidation">testValidTokenValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.AuthenticationSmokeTests" class="method navigator-link" hash-for-method="testValidUserLogin">testValidUserLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" title="com.digitalmoney.tests.AuthenticationSmokeTests" class="method navigator-link" hash-for-method="testValidUserRegistration">testValidUserRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Digital_Money_Sprint_2_Smoke_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Digital_Money_Sprint_2_Smoke_Test_Suite" class="panel Digital_Money_Sprint_2_Smoke_Test_Suite">
+          <div class="suite-Digital_Money_Sprint_2_Smoke_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.digitalmoney.tests.CardManagementSmokeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateCardWithInvalidAccountId">
+                  </a> <!-- testCreateCardWithInvalidAccountId -->
+                  <span class="method-name">testCreateCardWithInvalidAccountId</span>
+                  <em>
+(Create Card - Invalid Account ID (Negative Test))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateCardWithValidData">
+                  </a> <!-- testCreateCardWithValidData -->
+                  <span class="method-name">testCreateCardWithValidData</span>
+                  <em>
+(TC_S2_001: Create Card - Valid Data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteCard">
+                  </a> <!-- testDeleteCard -->
+                  <span class="method-name">testDeleteCard</span>
+                  <em>
+(TC_S2_010: Delete Card - Valid Request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetCardsByAccountId">
+                  </a> <!-- testGetCardsByAccountId -->
+                  <span class="method-name">testGetCardsByAccountId</span>
+                  <em>
+(TC_S2_002: Get Cards by Account ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetCardsWithInvalidAccountId">
+                  </a> <!-- testGetCardsWithInvalidAccountId -->
+                  <span class="method-name">testGetCardsWithInvalidAccountId</span>
+                  <em>
+(Get Cards - Invalid Account ID (Negative Test))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetSpecificCard">
+                  </a> <!-- testGetSpecificCard -->
+                  <span class="method-name">testGetSpecificCard</span>
+                  <em>
+(TC_S2_012: Get Specific Card - Valid Request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Money_Sprint_2_Smoke_Test_Suite-class-passed -->
+          <div class="suite-Digital_Money_Sprint_2_Smoke_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.digitalmoney.tests.InfrastructureSmokeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCORSHeaders">
+                  </a> <!-- testCORSHeaders -->
+                  <span class="method-name">testCORSHeaders</span>
+                  <em>
+(TC_S2_023: CORS Headers Validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEurekaServiceRegistration">
+                  </a> <!-- testEurekaServiceRegistration -->
+                  <span class="method-name">testEurekaServiceRegistration</span>
+                  <em>
+(Service Discovery - Eureka Registration)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGatewayAuthenticationFilter">
+                  </a> <!-- testGatewayAuthenticationFilter -->
+                  <span class="method-name">testGatewayAuthenticationFilter</span>
+                  <em>
+(Gateway Authentication Filter)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGatewayRoutingForCardEndpoints">
+                  </a> <!-- testGatewayRoutingForCardEndpoints -->
+                  <span class="method-name">testGatewayRoutingForCardEndpoints</span>
+                  <em>
+(TC_S2_020: Gateway Routing - Card Endpoints)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testServiceHealthCheck">
+                  </a> <!-- testServiceHealthCheck -->
+                  <span class="method-name">testServiceHealthCheck</span>
+                  <em>
+(TC_S2_025: Health Check - All Services)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Money_Sprint_2_Smoke_Test_Suite-class-passed -->
+          <div class="suite-Digital_Money_Sprint_2_Smoke_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.digitalmoney.tests.UserManagementSmokeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateAccountAlias">
+                  </a> <!-- testUpdateAccountAlias -->
+                  <span class="method-name">testUpdateAccountAlias</span>
+                  <em>
+(TC_S2_017: Update Account Alias - Valid Request)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateAccountWithInvalidUserId">
+                  </a> <!-- testUpdateAccountWithInvalidUserId -->
+                  <span class="method-name">testUpdateAccountWithInvalidUserId</span>
+                  <em>
+(Update Account - Invalid User ID (Negative Test))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUserProfileWithValidData">
+                  </a> <!-- testUpdateUserProfileWithValidData -->
+                  <span class="method-name">testUpdateUserProfileWithValidData</span>
+                  <em>
+(TC_S2_005: Update User Profile - Valid Data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUserWithInvalidId">
+                  </a> <!-- testUpdateUserWithInvalidId -->
+                  <span class="method-name">testUpdateUserWithInvalidId</span>
+                  <em>
+(Update User - Invalid User ID (Negative Test))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Money_Sprint_2_Smoke_Test_Suite-class-passed -->
+          <div class="suite-Digital_Money_Sprint_2_Smoke_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.digitalmoney.tests.AuthenticationSmokeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidTokenValidation">
+                  </a> <!-- testInvalidTokenValidation -->
+                  <span class="method-name">testInvalidTokenValidation</span>
+                  <em>
+(Token Validation - Invalid Token (Negative Test))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidTokenValidation">
+                  </a> <!-- testValidTokenValidation -->
+                  <span class="method-name">testValidTokenValidation</span>
+                  <em>
+(TC_S2_004: Token Validation - Valid Token)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidUserLogin">
+                  </a> <!-- testValidUserLogin -->
+                  <span class="method-name">testValidUserLogin</span>
+                  <em>
+(TC_S2_003: User Login - Valid Credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidUserRegistration">
+                  </a> <!-- testValidUserRegistration -->
+                  <span class="method-name">testValidUserRegistration</span>
+                  <em>
+(TC_S2_021: User Registration - Valid Data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Digital_Money_Sprint_2_Smoke_Test_Suite-class-passed -->
+        </div> <!-- panel Digital_Money_Sprint_2_Smoke_Test_Suite -->
+        <div panel-name="test-xml-Digital_Money_Sprint_2_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Escritorio\B.specialist\desafio-profesional\digital_money\testing\sprint_2\test-automation\src\test\resources\testng-smoke.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Digital Money Sprint 2 Smoke Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;baseUrl&quot; value=&quot;http://localhost:3500&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Infrastructure Smoke Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.digitalmoney.tests.InfrastructureSmokeTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Infrastructure Smoke Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Authentication Smoke Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.digitalmoney.tests.AuthenticationSmokeTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Authentication Smoke Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;User Management Smoke Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.digitalmoney.tests.UserManagementSmokeTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- User Management Smoke Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Card Management Smoke Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.digitalmoney.tests.CardManagementSmokeTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Card Management Smoke Tests --&gt;
+&lt;/suite&gt; &lt;!-- Digital Money Sprint 2 Smoke Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Digital_Money_Sprint_2_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Digital Money Sprint 2 Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Infrastructure Smoke Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Authentication Smoke Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">User Management Smoke Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Card Management Smoke Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Digital_Money_Sprint_2_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Digital Money Sprint 2 Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Digital_Money_Sprint_2_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Digital Money Sprint 2 Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Digital_Money_Sprint_2_Smoke_Test_Suite');
+function tableData_Digital_Money_Sprint_2_Smoke_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(19);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testUpdateUserProfileWithValidData')
+data.setCell(0, 2, 'com.digitalmoney.tests.UserManagementSmokeTests')
+data.setCell(0, 3, 670);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testValidUserRegistration')
+data.setCell(1, 2, 'com.digitalmoney.tests.AuthenticationSmokeTests')
+data.setCell(1, 3, 609);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testValidTokenValidation')
+data.setCell(2, 2, 'com.digitalmoney.tests.AuthenticationSmokeTests')
+data.setCell(2, 3, 340);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testValidUserLogin')
+data.setCell(3, 2, 'com.digitalmoney.tests.AuthenticationSmokeTests')
+data.setCell(3, 3, 272);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDeleteCard')
+data.setCell(4, 2, 'com.digitalmoney.tests.CardManagementSmokeTests')
+data.setCell(4, 3, 235);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testCreateCardWithValidData')
+data.setCell(5, 2, 'com.digitalmoney.tests.CardManagementSmokeTests')
+data.setCell(5, 3, 174);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testServiceHealthCheck')
+data.setCell(6, 2, 'com.digitalmoney.tests.InfrastructureSmokeTests')
+data.setCell(6, 3, 158);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testGetCardsByAccountId')
+data.setCell(7, 2, 'com.digitalmoney.tests.CardManagementSmokeTests')
+data.setCell(7, 3, 84);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testGetSpecificCard')
+data.setCell(8, 2, 'com.digitalmoney.tests.CardManagementSmokeTests')
+data.setCell(8, 3, 56);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testUpdateAccountAlias')
+data.setCell(9, 2, 'com.digitalmoney.tests.UserManagementSmokeTests')
+data.setCell(9, 3, 43);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testUpdateUserWithInvalidId')
+data.setCell(10, 2, 'com.digitalmoney.tests.UserManagementSmokeTests')
+data.setCell(10, 3, 34);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testUpdateAccountWithInvalidUserId')
+data.setCell(11, 2, 'com.digitalmoney.tests.UserManagementSmokeTests')
+data.setCell(11, 3, 34);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testCreateCardWithInvalidAccountId')
+data.setCell(12, 2, 'com.digitalmoney.tests.CardManagementSmokeTests')
+data.setCell(12, 3, 33);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testGetCardsWithInvalidAccountId')
+data.setCell(13, 2, 'com.digitalmoney.tests.CardManagementSmokeTests')
+data.setCell(13, 3, 29);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testInvalidTokenValidation')
+data.setCell(14, 2, 'com.digitalmoney.tests.AuthenticationSmokeTests')
+data.setCell(14, 3, 20);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testEurekaServiceRegistration')
+data.setCell(15, 2, 'com.digitalmoney.tests.InfrastructureSmokeTests')
+data.setCell(15, 3, 18);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testCORSHeaders')
+data.setCell(16, 2, 'com.digitalmoney.tests.InfrastructureSmokeTests')
+data.setCell(16, 3, 15);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testGatewayRoutingForCardEndpoints')
+data.setCell(17, 2, 'com.digitalmoney.tests.InfrastructureSmokeTests')
+data.setCell(17, 3, 14);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testGatewayAuthenticationFilter')
+data.setCell(18, 2, 'com.digitalmoney.tests.InfrastructureSmokeTests')
+data.setCell(18, 3, 14);
+window.suiteTableData['Digital_Money_Sprint_2_Smoke_Test_Suite']= { tableData: data, tableDiv: 'times-div-Digital_Money_Sprint_2_Smoke_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <div id="times-div-Digital_Money_Sprint_2_Smoke_Test_Suite">
+              </div> <!-- times-div-Digital_Money_Sprint_2_Smoke_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Digital_Money_Sprint_2_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Digital Money Sprint 2 Smoke Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Digital_Money_Sprint_2_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Digital_Money_Sprint_2_Smoke_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.digitalmoney.tests.InfrastructureSmokeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">257 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testServiceHealthCheck</span>
+                <span class="method-start">1469 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1629 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGatewayRoutingForCardEndpoints</span>
+                <span class="method-start">1915 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1930 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCORSHeaders</span>
+                <span class="method-start">2215 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2230 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEurekaServiceRegistration</span>
+                <span class="method-start">2508 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2527 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGatewayAuthenticationFilter</span>
+                <span class="method-start">2807 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.digitalmoney.tests.AuthenticationSmokeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupClass</span>
+                <span class="method-start">2845 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2845 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidUserLogin</span>
+                <span class="method-start">3127 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3400 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidTokenValidation</span>
+                <span class="method-start">3674 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4015 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidUserRegistration</span>
+                <span class="method-start">4292 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4902 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidTokenValidation</span>
+                <span class="method-start">5170 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.digitalmoney.tests.UserManagementSmokeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupClass</span>
+                <span class="method-start">5193 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">5194 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUserProfileWithValidData</span>
+                <span class="method-start">5467 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6138 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUpdateAccountAlias</span>
+                <span class="method-start">6409 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6452 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUserWithInvalidId</span>
+                <span class="method-start">6732 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6766 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUpdateAccountWithInvalidUserId</span>
+                <span class="method-start">7041 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.digitalmoney.tests.CardManagementSmokeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupClass</span>
+                <span class="method-start">7080 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testCreateCardWithValidData</span>
+                <span class="method-start">7364 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7538 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetCardsByAccountId</span>
+                <span class="method-start">7808 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7894 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetSpecificCard</span>
+                <span class="method-start">8167 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8224 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDeleteCard</span>
+                <span class="method-start">8499 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">8735 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateCardWithInvalidAccountId</span>
+                <span class="method-start">9008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9042 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetCardsWithInvalidAccountId</span>
+                <span class="method-start">9321 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

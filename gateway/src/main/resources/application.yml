@@ -12,6 +12,7 @@ spring:
             allowedMethods:
               - GET
               - POST
+              - PATCH
               - PUT
               - DELETE
             allowedHeaders: "*"
@@ -29,7 +30,7 @@ spring:
         - id: account-service
           uri: lb://account-service
           predicates:
-            - Path=/accounts/**
+            - Path=/accounts/**, /cards/**
           filters:
             - name: CircuitBreaker
               args:
@@ -39,7 +40,7 @@ spring:
         - id: auth-service
           uri: lb://auth-service
           predicates:
-            - Path=/auth/register, /auth/login, /auth/validate-token
+            - Path=/auth/**
 
 logging:
   level:

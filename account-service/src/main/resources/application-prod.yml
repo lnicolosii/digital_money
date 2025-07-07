@@ -5,8 +5,7 @@ spring:
   application:
     name: account-service
   config:
-    import: env.properties
-
+    import: optional:env.properties
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${MYSQL_HOST_URL}
@@ -33,8 +32,7 @@ logging:
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+      defaultZone: ${EUREKA_URL:http://eureka-server:8761/eureka}
   instance:
-    preferIpAddress: true
-    ip-address: 3.91.170.200
-    hostname: localhost
+    prefer-ip-address: false
+    hostname: ${HOSTNAME:account-service}

@@ -7,8 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class UserResponseDto {
-    @JsonProperty("user_id")
-    private Long userId;
+    private Long id;
     private String firstName;
     private String lastName;
     private String email;
@@ -20,8 +19,8 @@ public class UserResponseDto {
     public UserResponseDto() {
     }
 
-    public UserResponseDto(Long userId, String firstName, String lastName, String email, String dni, String phone, String cvu, String alias) {
-        this.userId = userId;
+    public UserResponseDto(Long id, String firstName, String lastName, String email, String dni, String phone, String cvu, String alias) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

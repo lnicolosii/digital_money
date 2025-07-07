@@ -1,10 +1,17 @@
 package com.digitalmoney.account_service.service;
 
-import com.digitalmoney.account_service.dto.AccountResponseDto;
+import com.digitalmoney.account_service.controller.requestDto.AccountUpdateDTO;
+import com.digitalmoney.account_service.dto.AccountDto;
+
+import java.util.List;
 
 public interface IAccountService {
-    AccountResponseDto createAccount(Long userId) throws Exception;
+    AccountDto createAccount(Long userId);
 
-    AccountResponseDto findByUserId(Long accountId) throws Exception;
+    AccountDto updateAccount(Long userId, AccountUpdateDTO data);
+
+    AccountDto findByUserId(Long accountId);
+
+    List<AccountDto> getAccounts();
 
 }

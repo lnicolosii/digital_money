@@ -4,6 +4,7 @@ import com.digitalmoney.auth_service.controller.requestDto.UserCreateDto;
 import com.digitalmoney.auth_service.controller.responseDto.AuthenticateResponse;
 import com.digitalmoney.auth_service.controller.requestDto.LoginDto;
 import com.digitalmoney.auth_service.controller.responseDto.UserResponseDto;
+import com.digitalmoney.auth_service.exceptions.TokenValidationException;
 import com.digitalmoney.auth_service.service.IAuthService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -31,40 +32,31 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<?> signup(@Valid @RequestBody(required = true) UserCreateDto data) {
-        try {
-            String token = authService.signup(data);
-            if (token != null) return ResponseEntity.status(HttpStatus.CREATED).body(new AuthenticateResponse(token));
-        } catch (Exception e) {
-            log.error("Error creating an user - {}", e.getMessage());
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-        }
-        return ResponseEntity.internalServerError().body("Something went wrong");
+    public ResponseEntity<UserResponseDto> signup(@Valid @RequestBody UserCreateDto data) {
+        log.info("User registration request received for email: {}", data.getEmail());
+        UserResponseDto user = authService.signup(data);
+        return ResponseEntity.status(HttpStatus.CREATED).body(user);
     }
 
     @PostMapping("/login")
-    public ResponseEntity<?> login(@RequestBody(required = true) LoginDto data) throws Exception {
-        try {
-            String token = authService.login(data);
-            if (token != null) return new ResponseEntity<>(new AuthenticateResponse(token), HttpStatus.OK);
-        } catch (Exception e) {
-            log.info("Failed to authenticate -> {}", String.valueOf(e));
-        }
-        return ResponseEntity.internalServerError().body("Something went wrong");
+    public ResponseEntity<AuthenticateResponse> login(@Valid @RequestBody LoginDto data) {
+        log.info("Login request received for email: {}", data.getEmail());
+        String token = authService.login(data);
+        return ResponseEntity.ok(new AuthenticateResponse(token));
     }
 
     @PostMapping("/validate-token")
-    public ResponseEntity<?> validateToken(@RequestBody Map<String, String> request) {
-        try {
-            String token = request.get("token");
+    public ResponseEntity<Map<String, Object>> validateToken(@RequestBody Map<String, String> request) {
+        String token = request.get("token");
+        log.debug("Token validation request received");
 
-            Long userId = authService.validateToken(token);
-            Map<String, Object> response = new HashMap<>();
-            response.put("id", userId);
-            return ResponseEntity.ok(response);
-        } catch (Exception e) {
-            log.info("Failed to validate -> {}", String.valueOf(e));
+        if (token == null || token.trim().isEmpty()) {
+            throw new TokenValidationException("Token is required");
         }
-        return ResponseEntity.internalServerError().body("Something went wrong");
+
+        Long userId = authService.validateToken(token);
+        Map<String, Object> response = new HashMap<>();
+        response.put("id", userId);
+        return ResponseEntity.ok(response);
     }
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Digital Money Sprint 2 Smoke Test Suite" verbose="1">
+    <parameter name="baseUrl" value="http://localhost:3500" />
+    
+    <test name="Infrastructure Smoke Tests" preserve-order="true">
+        <classes>
+            <class name="com.digitalmoney.tests.InfrastructureSmokeTests" />
+        </classes>
+    </test>
+    
+    <test name="Authentication Smoke Tests" preserve-order="true">
+        <classes>
+            <class name="com.digitalmoney.tests.AuthenticationSmokeTests" />
+        </classes>
+    </test>
+    
+    <test name="User Management Smoke Tests" preserve-order="true">
+        <classes>
+            <class name="com.digitalmoney.tests.UserManagementSmokeTests" />
+        </classes>
+    </test>
+    
+    <test name="Card Management Smoke Tests" preserve-order="true">
+        <classes>
+            <class name="com.digitalmoney.tests.CardManagementSmokeTests" />
+        </classes>
+    </test>
+</suite>

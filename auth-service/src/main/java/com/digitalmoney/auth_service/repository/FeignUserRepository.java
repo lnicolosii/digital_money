@@ -16,5 +16,5 @@ public interface FeignUserRepository {
     ResponseEntity<UserDto> findByEmail(@RequestParam String email);
 
     @PostMapping(value = "/users")
-    UserDto createUser(UserCreateDto data) throws Exception;
+    UserDto createUser(UserCreateDto data);
 }

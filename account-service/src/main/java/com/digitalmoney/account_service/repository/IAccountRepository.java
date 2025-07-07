@@ -10,4 +10,5 @@ import java.util.Optional;
 public interface IAccountRepository extends JpaRepository<Account, Long> {
     Optional<Account> findByCvu(String cvu);
     Optional<Account> findByUserId(Long userId);
+    Optional<Account> findByAlias(String alias);
 }

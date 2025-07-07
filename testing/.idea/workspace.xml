@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aa1204d5-aecd-4f5e-a80f-6257bef6c9ea" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/controller/CardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/controller/TransactionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/controller/requestDto/CardCreateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/controller/requestDto/CardUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/dto/CardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/entity/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/entity/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/entity/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/entity/TypeCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/exceptions/ApplicationHandlerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/exceptions/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/exceptions/ExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/exceptions/ForbiddenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/exceptions/InternalServerError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/exceptions/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/mappers/CardMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/mappers/TransactionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/repository/ICardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/repository/ITransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/service/ICardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/service/ITransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/service/impl/CardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/service/impl/TransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../account-service/src/main/resources/import.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/controller/requestDto/UserUpdateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/exceptions/ApplicationHandlerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/exceptions/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/exceptions/ExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/exceptions/ForbiddenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/exceptions/InternalServerError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/exceptions/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../user-service/src/main/resources/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/controller/requestDto/AccountCreateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/controller/requestDto/AccountUpdateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/dto/AccountDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/dto/AccountDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/dto/AccountResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/entity/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/mappers/AccountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/mappers/AccountMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/repository/IAccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/repository/IAccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/service/IAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/service/IAccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/service/impl/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/service/impl/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/utils/GeneratorKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/../account-service/src/main/java/com/digitalmoney/account_service/utils/GeneratorKeys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/dto/User/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/dto/User/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/jwt/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/mappers/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/mappers/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/repository/FeignUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/repository/FeignUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/service/IAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/service/IAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/service/impl/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/src/main/java/com/digitalmoney/auth_service/service/impl/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/clients/dtos/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/clients/dtos/AccountDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/dto/UserResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/dto/UserResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/mappers/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/mappers/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user-service/src/main/java/com/digitalmoney/user_service/service/impl/UserService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2z7UEPcHaqotHdl9Znw9qbfcthE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa1204d5-aecd-4f5e-a80f-6257bef6c9ea" name="Changes" comment="" />
+      <created>1751081493354</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751081493354</updated>
+    </task>
+    <servers />
+  </component>
+</project>

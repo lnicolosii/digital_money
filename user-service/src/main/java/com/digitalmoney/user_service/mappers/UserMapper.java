@@ -19,7 +19,7 @@ public class UserMapper {
 
     public UserDto mapToDto(User userEntity, String cvu, String alias) {
         UserDto dto = new UserDto();
-        dto.setUserId(userEntity.getUserId());
+        dto.setId(userEntity.getId());
         dto.setFirstName(userEntity.getFirstName());
         dto.setPassword(userEntity.getPassword());
         dto.setLastName(userEntity.getLastName());
@@ -33,7 +33,7 @@ public class UserMapper {
 
     public UserResponseDto mapToResponseDto(User userEntity, String cvu, String alias) {
         UserResponseDto dto = new UserResponseDto();
-        dto.setUserId(userEntity.getUserId());
+        dto.setId(userEntity.getId());
         dto.setFirstName(userEntity.getFirstName());
         dto.setLastName(userEntity.getLastName());
         dto.setEmail(userEntity.getEmail());

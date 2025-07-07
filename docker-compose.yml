@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.3'
 
 networks:
   digital-money:
@@ -32,6 +32,7 @@ services:
     environment:
       EUREKA_URL: http://eureka-server:8761/eureka
       PORT: 3500
+      HOSTNAME: gateway
     depends_on:
       - eureka-server
     restart: always
@@ -48,6 +49,7 @@ services:
       MYSQL_USERNAME: root
       MYSQL_PASSWORD: rootpassword
       MYSQL_HOST_URL: jdbc:mysql://db:3306/digital_money
+      HOSTNAME: user-service
     depends_on:
       - eureka-server
       - db
@@ -65,6 +67,7 @@ services:
       MYSQL_USERNAME: root
       MYSQL_PASSWORD: rootpassword
       MYSQL_HOST_URL: jdbc:mysql://db:3306/digital_money
+      HOSTNAME: account-service
     depends_on:
       - eureka-server
       - db
@@ -78,6 +81,7 @@ services:
       - '8081:8080'
     environment:
       EUREKA_URL: http://eureka-server:8761/eureka
+      HOSTNAME: auth-service
     depends_on:
       - eureka-server
     restart: always

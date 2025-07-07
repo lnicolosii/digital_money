@@ -1,0 +1,5 @@
+com\digitalmoney\tests\CardManagementSmokeTests.class
+com\digitalmoney\tests\UserManagementSmokeTests.class
+com\digitalmoney\tests\AuthenticationSmokeTests.class
+com\digitalmoney\tests\InfrastructureSmokeTests.class
+com\digitalmoney\tests\BaseTest.class

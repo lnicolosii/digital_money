@@ -1,23 +1,21 @@
 package com.digitalmoney.account_service.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@ToString
 public class AccountDto {
-    private Long accountId;
+    private Long id;
+    @JsonProperty("user_id")
     private Long userId;
-    private String cvu;
     private String alias;
+    private String cvu;
+    private double balance;
 
-    public AccountDto() {
-    }
-
-    public AccountDto(Long accountId, Long userId, String cvu, String alias) {
-        this.accountId = accountId;
-        this.userId = userId;
-        this.cvu = cvu;
-        this.alias = alias;
-    }
 }

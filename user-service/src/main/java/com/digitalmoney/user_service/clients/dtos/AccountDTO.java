@@ -12,8 +12,7 @@ import lombok.*;
 public class AccountDTO {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("account_id")
-    private Long accountId;
+    private Long id;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String alias;
     @JsonInclude(JsonInclude.Include.NON_NULL)

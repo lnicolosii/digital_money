@@ -1,8 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://18.208.207.210/eureka
+      defaultZone: ${EUREKA_URL:http://eureka-server:8761/eureka}
   instance:
-    preferIpAddress: true
-    ip-address: 44.204.249.150
-    hostname: localhost
+    prefer-ip-address: false
+    hostname: ${HOSTNAME:auth-service}

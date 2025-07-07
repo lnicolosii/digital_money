@@ -1,13 +1,12 @@
 package com.digitalmoney.auth_service.dto.User;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
 public class UserDto {
-    private Long userId;
+    private Long id;
     private String firstName;
     private String lastName;
     private String email;
@@ -20,8 +19,8 @@ public class UserDto {
     public UserDto() {
     }
 
-    public UserDto(Long userId, String firstName, String lastName, String email, String password, String dni, String phone) {
-        this.userId = userId;
+    public UserDto(Long id, String firstName, String lastName, String email, String password, String dni, String phone) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

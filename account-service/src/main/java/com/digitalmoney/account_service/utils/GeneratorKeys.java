@@ -49,8 +49,9 @@ public class GeneratorKeys {
         try (InputStream in = keysGenerator.getClass().getResourceAsStream(path);
              BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
 
-            while (reader.readLine() != null) {
-                words.add(reader.readLine());
+            String line;
+            while ((line = reader.readLine()) != null) {
+                words.add(line);
             }
 
         } catch (IOException e) {

@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class UserDto {
-    private Long userId;
+    private Long id;
     private String firstName;
     private String lastName;
     private String email;
@@ -19,8 +19,8 @@ public class UserDto {
     public UserDto() {
     }
 
-    public UserDto(Long userId, String firstName, String lastName, String email, String password, String dni, String phone, String cvu, String alias) {
-        this.userId = userId;
+    public UserDto(Long id, String firstName, String lastName, String email, String password, String dni, String phone, String cvu, String alias) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;

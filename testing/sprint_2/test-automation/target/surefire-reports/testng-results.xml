@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-06T19:55:59 ART" name="Digital Money Sprint 2 Smoke Test Suite" finished-at="2025-07-06T19:56:09 ART" duration-ms="9367">
+    <groups>
+    </groups>
+    <test started-at="2025-07-06T19:55:59 ART" name="Infrastructure Smoke Tests" finished-at="2025-07-06T19:56:02 ART" duration-ms="2839">
+      <class name="com.digitalmoney.tests.InfrastructureSmokeTests">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:com.digitalmoney.tests.InfrastructureSmokeTests@1ab3a8c8]" started-at="2025-07-06T19:55:59 ART" name="setupClass" finished-at="2025-07-06T19:56:00 ART" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.InfrastructureSmokeTests@1ab3a8c8]" started-at="2025-07-06T19:56:00 ART" name="setup" finished-at="2025-07-06T19:56:01 ART" duration-ms="1212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testServiceHealthCheck()[pri:1, instance:com.digitalmoney.tests.InfrastructureSmokeTests@1ab3a8c8]" started-at="2025-07-06T19:56:01 ART" name="testServiceHealthCheck" description="TC_S2_025: Health Check - All Services" finished-at="2025-07-06T19:56:01 ART" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testServiceHealthCheck -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.InfrastructureSmokeTests@1ab3a8c8]" started-at="2025-07-06T19:56:01 ART" name="setup" finished-at="2025-07-06T19:56:01 ART" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGatewayRoutingForCardEndpoints()[pri:2, instance:com.digitalmoney.tests.InfrastructureSmokeTests@1ab3a8c8]" started-at="2025-07-06T19:56:01 ART" name="testGatewayRoutingForCardEndpoints" description="TC_S2_020: Gateway Routing - Card Endpoints" finished-at="2025-07-06T19:56:01 ART" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGatewayRoutingForCardEndpoints -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.InfrastructureSmokeTests@1ab3a8c8]" started-at="2025-07-06T19:56:01 ART" name="setup" finished-at="2025-07-06T19:56:02 ART" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCORSHeaders()[pri:3, instance:com.digitalmoney.tests.InfrastructureSmokeTests@1ab3a8c8]" started-at="2025-07-06T19:56:02 ART" name="testCORSHeaders" description="TC_S2_023: CORS Headers Validation" finished-at="2025-07-06T19:56:02 ART" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCORSHeaders -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.InfrastructureSmokeTests@1ab3a8c8]" started-at="2025-07-06T19:56:02 ART" name="setup" finished-at="2025-07-06T19:56:02 ART" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testEurekaServiceRegistration()[pri:4, instance:com.digitalmoney.tests.InfrastructureSmokeTests@1ab3a8c8]" started-at="2025-07-06T19:56:02 ART" name="testEurekaServiceRegistration" description="Service Discovery - Eureka Registration" finished-at="2025-07-06T19:56:02 ART" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEurekaServiceRegistration -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.InfrastructureSmokeTests@1ab3a8c8]" started-at="2025-07-06T19:56:02 ART" name="setup" finished-at="2025-07-06T19:56:02 ART" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGatewayAuthenticationFilter()[pri:5, instance:com.digitalmoney.tests.InfrastructureSmokeTests@1ab3a8c8]" started-at="2025-07-06T19:56:02 ART" name="testGatewayAuthenticationFilter" description="Gateway Authentication Filter" finished-at="2025-07-06T19:56:02 ART" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGatewayAuthenticationFilter -->
+      </class> <!-- com.digitalmoney.tests.InfrastructureSmokeTests -->
+    </test> <!-- Infrastructure Smoke Tests -->
+    <test started-at="2025-07-06T19:56:02 ART" name="Authentication Smoke Tests" finished-at="2025-07-06T19:56:05 ART" duration-ms="2346">
+      <class name="com.digitalmoney.tests.AuthenticationSmokeTests">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:com.digitalmoney.tests.AuthenticationSmokeTests@9f116cc]" started-at="2025-07-06T19:56:02 ART" name="setupClass" finished-at="2025-07-06T19:56:02 ART" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.AuthenticationSmokeTests@9f116cc]" started-at="2025-07-06T19:56:02 ART" name="setup" finished-at="2025-07-06T19:56:02 ART" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testValidUserLogin()[pri:1, instance:com.digitalmoney.tests.AuthenticationSmokeTests@9f116cc]" started-at="2025-07-06T19:56:02 ART" name="testValidUserLogin" description="TC_S2_003: User Login - Valid Credentials" finished-at="2025-07-06T19:56:03 ART" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidUserLogin -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.AuthenticationSmokeTests@9f116cc]" started-at="2025-07-06T19:56:03 ART" name="setup" finished-at="2025-07-06T19:56:03 ART" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testValidTokenValidation()[pri:2, instance:com.digitalmoney.tests.AuthenticationSmokeTests@9f116cc]" started-at="2025-07-06T19:56:03 ART" name="testValidTokenValidation" description="TC_S2_004: Token Validation - Valid Token" finished-at="2025-07-06T19:56:03 ART" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidTokenValidation -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.AuthenticationSmokeTests@9f116cc]" started-at="2025-07-06T19:56:03 ART" name="setup" finished-at="2025-07-06T19:56:04 ART" duration-ms="277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testValidUserRegistration()[pri:3, instance:com.digitalmoney.tests.AuthenticationSmokeTests@9f116cc]" started-at="2025-07-06T19:56:04 ART" name="testValidUserRegistration" description="TC_S2_021: User Registration - Valid Data" finished-at="2025-07-06T19:56:04 ART" duration-ms="609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidUserRegistration -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.AuthenticationSmokeTests@9f116cc]" started-at="2025-07-06T19:56:04 ART" name="setup" finished-at="2025-07-06T19:56:05 ART" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInvalidTokenValidation()[pri:4, instance:com.digitalmoney.tests.AuthenticationSmokeTests@9f116cc]" started-at="2025-07-06T19:56:05 ART" name="testInvalidTokenValidation" description="Token Validation - Invalid Token (Negative Test)" finished-at="2025-07-06T19:56:05 ART" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidTokenValidation -->
+      </class> <!-- com.digitalmoney.tests.AuthenticationSmokeTests -->
+    </test> <!-- Authentication Smoke Tests -->
+    <test started-at="2025-07-06T19:56:05 ART" name="User Management Smoke Tests" finished-at="2025-07-06T19:56:06 ART" duration-ms="1883">
+      <class name="com.digitalmoney.tests.UserManagementSmokeTests">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:com.digitalmoney.tests.UserManagementSmokeTests@6572421]" started-at="2025-07-06T19:56:05 ART" name="setupClass" finished-at="2025-07-06T19:56:05 ART" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.UserManagementSmokeTests@6572421]" started-at="2025-07-06T19:56:05 ART" name="setup" finished-at="2025-07-06T19:56:05 ART" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUpdateUserProfileWithValidData()[pri:1, instance:com.digitalmoney.tests.UserManagementSmokeTests@6572421]" started-at="2025-07-06T19:56:05 ART" name="testUpdateUserProfileWithValidData" description="TC_S2_005: Update User Profile - Valid Data" finished-at="2025-07-06T19:56:05 ART" duration-ms="670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserProfileWithValidData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.UserManagementSmokeTests@6572421]" started-at="2025-07-06T19:56:06 ART" name="setup" finished-at="2025-07-06T19:56:06 ART" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUpdateAccountAlias()[pri:2, instance:com.digitalmoney.tests.UserManagementSmokeTests@6572421]" started-at="2025-07-06T19:56:06 ART" name="testUpdateAccountAlias" description="TC_S2_017: Update Account Alias - Valid Request" finished-at="2025-07-06T19:56:06 ART" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateAccountAlias -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.UserManagementSmokeTests@6572421]" started-at="2025-07-06T19:56:06 ART" name="setup" finished-at="2025-07-06T19:56:06 ART" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUpdateUserWithInvalidId()[pri:3, instance:com.digitalmoney.tests.UserManagementSmokeTests@6572421]" started-at="2025-07-06T19:56:06 ART" name="testUpdateUserWithInvalidId" description="Update User - Invalid User ID (Negative Test)" finished-at="2025-07-06T19:56:06 ART" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserWithInvalidId -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.UserManagementSmokeTests@6572421]" started-at="2025-07-06T19:56:06 ART" name="setup" finished-at="2025-07-06T19:56:06 ART" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUpdateAccountWithInvalidUserId()[pri:5, instance:com.digitalmoney.tests.UserManagementSmokeTests@6572421]" started-at="2025-07-06T19:56:06 ART" name="testUpdateAccountWithInvalidUserId" description="Update Account - Invalid User ID (Negative Test)" finished-at="2025-07-06T19:56:06 ART" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateAccountWithInvalidUserId -->
+      </class> <!-- com.digitalmoney.tests.UserManagementSmokeTests -->
+    </test> <!-- User Management Smoke Tests -->
+    <test started-at="2025-07-06T19:56:06 ART" name="Card Management Smoke Tests" finished-at="2025-07-06T19:56:09 ART" duration-ms="2271">
+      <class name="com.digitalmoney.tests.CardManagementSmokeTests">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:06 ART" name="setupClass" finished-at="2025-07-06T19:56:06 ART" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:06 ART" name="setup" finished-at="2025-07-06T19:56:07 ART" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCreateCardWithValidData()[pri:1, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:07 ART" name="testCreateCardWithValidData" description="TC_S2_001: Create Card - Valid Data" finished-at="2025-07-06T19:56:07 ART" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateCardWithValidData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:07 ART" name="setup" finished-at="2025-07-06T19:56:07 ART" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGetCardsByAccountId()[pri:2, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:07 ART" name="testGetCardsByAccountId" description="TC_S2_002: Get Cards by Account ID" finished-at="2025-07-06T19:56:07 ART" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCardsByAccountId -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:07 ART" name="setup" finished-at="2025-07-06T19:56:08 ART" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGetSpecificCard()[pri:3, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:08 ART" name="testGetSpecificCard" description="TC_S2_012: Get Specific Card - Valid Request" finished-at="2025-07-06T19:56:08 ART" depends-on-methods="com.digitalmoney.tests.CardManagementSmokeTests.testCreateCardWithValidData" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSpecificCard -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:08 ART" name="setup" finished-at="2025-07-06T19:56:08 ART" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDeleteCard()[pri:4, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:08 ART" name="testDeleteCard" description="TC_S2_010: Delete Card - Valid Request" finished-at="2025-07-06T19:56:08 ART" depends-on-methods="com.digitalmoney.tests.CardManagementSmokeTests.testCreateCardWithValidData, com.digitalmoney.tests.CardManagementSmokeTests.testGetSpecificCard" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteCard -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:08 ART" name="setup" finished-at="2025-07-06T19:56:08 ART" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCreateCardWithInvalidAccountId()[pri:5, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:08 ART" name="testCreateCardWithInvalidAccountId" description="Create Card - Invalid Account ID (Negative Test)" finished-at="2025-07-06T19:56:08 ART" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateCardWithInvalidAccountId -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:08 ART" name="setup" finished-at="2025-07-06T19:56:09 ART" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGetCardsWithInvalidAccountId()[pri:6, instance:com.digitalmoney.tests.CardManagementSmokeTests@5c5eefef]" started-at="2025-07-06T19:56:09 ART" name="testGetCardsWithInvalidAccountId" description="Get Cards - Invalid Account ID (Negative Test)" finished-at="2025-07-06T19:56:09 ART" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCardsWithInvalidAccountId -->
+      </class> <!-- com.digitalmoney.tests.CardManagementSmokeTests -->
+    </test> <!-- Card Management Smoke Tests -->
+  </suite> <!-- Digital Money Sprint 2 Smoke Test Suite -->
+</testng-results>
