@@ -22,6 +22,7 @@ public class CardMapper {
         dto.setCvv(data.getCvv());
         dto.setExpirationDate(data.getExpirationDate());
         dto.setBank(data.getBank());
+        dto.setNetwork(data.getNetwork());
         return dto;
     }
 

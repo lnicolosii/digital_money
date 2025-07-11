@@ -35,4 +35,9 @@ public class Account {
     @OneToMany(mappedBy = "account")
     @JsonIgnore
     private List<Transaction> transactions;
+
+    public Account updateBalance(Double value) {
+        this.balance = this.balance + value;
+        return this;
+    }
 }

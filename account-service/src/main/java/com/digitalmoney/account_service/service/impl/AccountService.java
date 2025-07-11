@@ -1,7 +1,9 @@
 package com.digitalmoney.account_service.service.impl;
 
 import com.digitalmoney.account_service.controller.requestDto.AccountUpdateDTO;
+import com.digitalmoney.account_service.controller.requestDto.DepositDto;
 import com.digitalmoney.account_service.dto.AccountDto;
+import com.digitalmoney.account_service.dto.TransactionDto;
 import com.digitalmoney.account_service.entity.Account;
 import com.digitalmoney.account_service.mappers.AccountMapper;
 import com.digitalmoney.account_service.repository.IAccountRepository;
@@ -22,17 +24,19 @@ import java.util.Optional;
 public class AccountService implements IAccountService {
     private final AccountMapper accountMapper;
     private final IAccountRepository accountRepository;
+    private final TransactionService transactionService;
 
-    public AccountService(AccountMapper accountMapper, IAccountRepository accountRepository) {
+    public AccountService(AccountMapper accountMapper, IAccountRepository accountRepository, TransactionService transactionService) {
         this.accountMapper = accountMapper;
         this.accountRepository = accountRepository;
+        this.transactionService = transactionService;
     }
 
     @Transactional
     @Override
     public AccountDto createAccount(Long userId) {
         log.info("Creating account for user ID: {}", userId);
-        
+
         if (userId == null) {
             log.warn("Account creation failed: userId is null");
             throw new BadRequestException("User ID cannot be null");
@@ -57,7 +61,7 @@ public class AccountService implements IAccountService {
         account.setBalance(0.0);
 
         Account accountResponse = accountRepository.save(account);
-        log.info("Account successfully created for user ID: {} with CVU: {} and alias: {}", 
+        log.info("Account successfully created for user ID: {} with CVU: {} and alias: {}",
                 userId, cvu, alias);
         return accountMapper.mapToDto(accountResponse);
     }
@@ -65,14 +69,14 @@ public class AccountService implements IAccountService {
     @Override
     public AccountDto updateAccount(Long userId, AccountUpdateDTO data) {
         log.info("Updating account for user ID: {}", userId);
-        
+
         if (data == null || data.getAlias() == null || data.getAlias().trim().isEmpty()) {
             log.warn("Account update failed: invalid alias data");
             throw new BadRequestException("Alias cannot be null or empty");
         }
-        
+
         Account account = getAccountByUserId(userId);
-        
+
         // Validate alias uniqueness if it's being changed
         if (!account.getAlias().equals(data.getAlias())) {
             Optional<Account> existingAccount = accountRepository.findByAlias(data.getAlias());
@@ -109,13 +113,33 @@ public class AccountService implements IAccountService {
         return accountsDto;
     }
 
+    @Override
+    public TransactionDto depositMoney(Long accountId, DepositDto data) {
+        return transactionService.depositTransaction(accountId, data);
+    }
+
+    @Override
+    public List<TransactionDto> getLastFiveTransactions(Long accountId) {
+        return transactionService.getLastTransactions(accountId);
+    }
+
+    @Override
+    public List<TransactionDto> getTransactions(Long accountId) {
+        return transactionService.getTransactions(accountId);
+    }
+
+    @Override
+    public TransactionDto getTransaction(Long transactionId) {
+        return transactionService.getTransaction(transactionId);
+    }
+
     //UTILS
     Account getAccountByUserId(Long userId) {
         if (userId == null) {
             log.warn("Get account by user ID failed: userId is null");
             throw new BadRequestException("User ID cannot be null");
         }
-        
+
         Optional<Account> account = accountRepository.findByUserId(userId);
         if (account.isEmpty()) {
             log.warn("Account not found for user ID: {}", userId);

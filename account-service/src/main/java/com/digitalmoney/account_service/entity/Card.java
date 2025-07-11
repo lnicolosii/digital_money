@@ -1,7 +1,8 @@
 package com.digitalmoney.account_service.entity;
 
+import com.digitalmoney.account_service.entity.enums.NetworkCard;
+import com.digitalmoney.account_service.entity.enums.TypeCard;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,7 +21,7 @@ public class Card {
     private Long id;
     @Column(nullable = false)
     private String holder;
-    @Column
+    @Column(nullable = false)
     private String bank;
     @Column(nullable = false)
     private String expirationDate;
@@ -29,8 +30,11 @@ public class Card {
     @Column(nullable = false)
     private Integer cvv;
     @Enumerated(EnumType.STRING)
-    @Column
+    @Column(nullable = false)
     private TypeCard cardType;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private NetworkCard network;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @JoinColumn(name = "account_id", nullable = false)

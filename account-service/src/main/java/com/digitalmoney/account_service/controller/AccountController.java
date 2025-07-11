@@ -1,7 +1,9 @@
 package com.digitalmoney.account_service.controller;
 
 import com.digitalmoney.account_service.controller.requestDto.AccountUpdateDTO;
+import com.digitalmoney.account_service.controller.requestDto.DepositDto;
 import com.digitalmoney.account_service.dto.AccountDto;
+import com.digitalmoney.account_service.dto.TransactionDto;
 import com.digitalmoney.account_service.service.impl.AccountService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -48,5 +50,31 @@ public class AccountController {
         log.info("Get account by user ID request: {}", userId);
         AccountDto account = accountService.findByUserId(userId);
         return ResponseEntity.ok(account);
+    }
+
+    @PostMapping("/{accountId}/deposit")
+    public ResponseEntity<TransactionDto> depositMoney(@PathVariable Long accountId, @RequestBody DepositDto data) {
+        log.info("Deposit money by account ID request: {}", accountId);
+        TransactionDto transaction = accountService.depositMoney(accountId, data);
+        return ResponseEntity.ok(transaction);
+    }
+
+    @GetMapping("/{accountId}/activity")
+    public ResponseEntity<List<TransactionDto>> getAllActivities(@PathVariable Long accountId) {
+        log.info("Get all transactions by account ID request: {}", accountId);
+        return ResponseEntity.ok(accountService.getTransactions(accountId));
+    }
+
+    @GetMapping("/{accountId}/recent-activity")
+    public ResponseEntity<List<TransactionDto>> getRecentActivities(@PathVariable Long accountId) {
+        log.info("Get first five transactions by account ID request: {}", accountId);
+        return ResponseEntity.ok(accountService.getLastFiveTransactions(accountId));
+    }
+
+    @GetMapping("/{accountId}/activity/{transactionId}")
+    public ResponseEntity<TransactionDto> getActivity(@PathVariable Long accountId, @PathVariable Long transactionId) {
+        log.info("Get specific transaction by account ID request: {}", accountId);
+        TransactionDto transaction = accountService.getTransaction(transactionId);
+        return ResponseEntity.ok(transaction);
     }
 }

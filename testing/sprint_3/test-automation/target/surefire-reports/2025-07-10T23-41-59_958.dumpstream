@@ -1,0 +1,5 @@
+# Created at 2025-07-10T23:42:00.220
+Boot Manifest-JAR contains absolute paths in classpath 'E:\Escritorio\B.specialist\desafio-profesional\digital_money\testing\sprint_3\test-automation\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

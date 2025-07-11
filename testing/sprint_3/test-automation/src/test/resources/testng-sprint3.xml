@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Digital Money Sprint 3 - Transaction System Test Suite">
+    
+    <test name="Transaction System Tests">
+        <classes>
+            <class name="com.digitalmoney.tests.TransactionSystemTests"/>
+        </classes>
+    </test>
+    
+    <test name="Transaction Integration Tests">
+        <classes>
+            <class name="com.digitalmoney.tests.TransactionIntegrationTests"/>
+        </classes>
+    </test>
+    
+</suite>

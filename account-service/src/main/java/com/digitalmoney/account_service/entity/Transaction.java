@@ -1,5 +1,6 @@
 package com.digitalmoney.account_service.entity;
 
+import com.digitalmoney.account_service.entity.enums.TransactionType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

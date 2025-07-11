@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Digital Money Sprint 3 - Transaction System Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Transaction System Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.digitalmoney.tests.TransactionSystemTests">
+        <methods>
+          <include name="testBalanceUpdateAfterTransactions"/>
+          <include name="testConcurrentTransactions"/>
+          <include name="testTransferInsufficientBalance"/>
+          <include name="testTransactionDescription"/>
+          <include name="testDepositSuccess"/>
+          <include name="testGetTransactionHistory"/>
+          <include name="testDepositNegativeAmount"/>
+          <include name="testGetNonExistentTransaction"/>
+          <include name="testTransferBetweenUsers"/>
+          <include name="testFilterTransactionsByType"/>
+          <include name="setupClass"/>
+          <include name="testGetTransactionById"/>
+          <include name="setupMethod"/>
+          <include name="testTransferSuccess"/>
+        </methods>
+      </class> <!-- com.digitalmoney.tests.TransactionSystemTests -->
+    </classes>
+  </test> <!-- Transaction System Tests(failed) -->
+  <test thread-count="5" name="Transaction Integration Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.digitalmoney.tests.TransactionIntegrationTests">
+        <methods>
+          <include name="testFilterTransactionsByType"/>
+          <include name="testGetTransactionById"/>
+          <include name="testBalanceUpdateAfterTransactions"/>
+          <include name="testDepositSuccess"/>
+          <include name="testGetTransactionHistory"/>
+          <include name="testTransferInsufficientBalance"/>
+          <include name="setupClass"/>
+          <include name="setupMethod"/>
+          <include name="testDepositNegativeAmount"/>
+          <include name="testCompleteTransactionFlow"/>
+          <include name="testGetNonExistentTransaction"/>
+        </methods>
+      </class> <!-- com.digitalmoney.tests.TransactionIntegrationTests -->
+    </classes>
+  </test> <!-- Transaction Integration Tests(failed) -->
+</suite> <!-- Failed suite [Digital Money Sprint 3 - Transaction System Test Suite] -->
