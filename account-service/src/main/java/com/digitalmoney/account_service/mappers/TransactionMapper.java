@@ -20,7 +20,6 @@ public class TransactionMapper {
     public TransactionDto mapToDto(Transaction data) {
         TransactionDto dto = new TransactionDto();
         dto.setId(data.getId());
-        dto.setAccount(accountMapper.mapToDto(data.getAccount()));
         dto.setDescription(data.getDescription());
         dto.setOrigin(data.getOrigin());
         dto.setAmount(data.getAmount());

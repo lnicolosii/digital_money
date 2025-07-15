@@ -23,5 +23,4 @@ public class TransactionDto {
     private String destination;
     @JsonProperty("transaction_type")
     private TransactionType transactionType;
-    private AccountDto account;
 }

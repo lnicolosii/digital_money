@@ -1,5 +1,6 @@
 package com.digitalmoney.account_service.controller.requestDto;
 
+import com.digitalmoney.account_service.entity.enums.NetworkCard;
 import com.digitalmoney.account_service.entity.enums.TypeCard;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
@@ -22,4 +23,7 @@ public class CardCreateDTO {
     private Integer cvv;
     @NotNull
     private TypeCard cardType;
+    @NotNull
+    private NetworkCard network;
+
 }

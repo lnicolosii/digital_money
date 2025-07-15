@@ -44,6 +44,7 @@ public class CardService implements ICardService {
         card.setBank(data.getBank());
         card.setCardType(data.getCardType());
         card.setExpirationDate(data.getExpirationDate());
+        card.setNetwork(data.getNetwork());
         card.setCvv(data.getCvv());
 
         Optional<Account> account = accountRepository.findById(data.getAccountId());
@@ -58,7 +59,21 @@ public class CardService implements ICardService {
     @Transactional
     @Override
     public CardDto updateCard(Long cardId, CardUpdateDTO data) throws Exception {
-        return null;
+        Optional<Card> cardResult = this.cardRepository.findById(cardId);
+        if (cardResult.isEmpty()) {
+            throw new NotFoundException("Card not found : " + cardId);
+        }
+        Card card = cardResult.get();
+        card.setNumber(data.getNumber());
+        card.setHolder(data.getHolder());
+        card.setBank(data.getBank());
+        card.setCardType(data.getCardType());
+        card.setExpirationDate(data.getExpirationDate());
+        card.setNetwork(data.getNetwork());
+        card.setCvv(data.getCvv());
+
+        cardRepository.save(card);
+        return mapper.mapToDto(card);
     }
 
     @Transactional(readOnly = true)
@@ -97,4 +112,5 @@ public class CardService implements ICardService {
     private boolean checkIfCardExists(Long cardNumber) {
         return cardRepository.findByNumber(cardNumber).isPresent();
     }
+
 }

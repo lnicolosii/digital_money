@@ -1,7 +1,8 @@
 package com.digitalmoney.account_service.service.impl;
 
 import com.digitalmoney.account_service.controller.requestDto.AccountUpdateDTO;
-import com.digitalmoney.account_service.controller.requestDto.DepositDto;
+import com.digitalmoney.account_service.controller.requestDto.DepositDTO;
+import com.digitalmoney.account_service.controller.requestDto.TransferDTO;
 import com.digitalmoney.account_service.dto.AccountDto;
 import com.digitalmoney.account_service.dto.TransactionDto;
 import com.digitalmoney.account_service.entity.Account;
@@ -114,8 +115,13 @@ public class AccountService implements IAccountService {
     }
 
     @Override
-    public TransactionDto depositMoney(Long accountId, DepositDto data) {
+    public TransactionDto depositMoney(Long accountId, DepositDTO data) {
         return transactionService.depositTransaction(accountId, data);
+    }
+
+    @Override
+    public TransactionDto transferMoney(Long accountId, TransferDTO data) {
+        return transactionService.transferTransaction(accountId, data);
     }
 
     @Override

@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class DepositDto {
+public class DepositDTO {
     private Long cardId;
     private Double amount;
 }

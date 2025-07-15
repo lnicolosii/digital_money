@@ -1,7 +1,8 @@
 package com.digitalmoney.account_service.controller;
 
 import com.digitalmoney.account_service.controller.requestDto.AccountUpdateDTO;
-import com.digitalmoney.account_service.controller.requestDto.DepositDto;
+import com.digitalmoney.account_service.controller.requestDto.DepositDTO;
+import com.digitalmoney.account_service.controller.requestDto.TransferDTO;
 import com.digitalmoney.account_service.dto.AccountDto;
 import com.digitalmoney.account_service.dto.TransactionDto;
 import com.digitalmoney.account_service.service.impl.AccountService;
@@ -53,9 +54,16 @@ public class AccountController {
     }
 
     @PostMapping("/{accountId}/deposit")
-    public ResponseEntity<TransactionDto> depositMoney(@PathVariable Long accountId, @RequestBody DepositDto data) {
+    public ResponseEntity<TransactionDto> depositMoney(@PathVariable Long accountId, @RequestBody DepositDTO data) {
         log.info("Deposit money by account ID request: {}", accountId);
         TransactionDto transaction = accountService.depositMoney(accountId, data);
+        return ResponseEntity.ok(transaction);
+    }
+
+    @PostMapping("/{accountId}/transfer")
+    public ResponseEntity<TransactionDto> transferMoney(@PathVariable Long accountId, @RequestBody TransferDTO data) {
+        log.info("Deposit money by account ID request: {}", accountId);
+        TransactionDto transaction = accountService.transferMoney(accountId, data);
         return ResponseEntity.ok(transaction);
     }
 

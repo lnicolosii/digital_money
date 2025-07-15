@@ -1,4 +1,12 @@
 package com.digitalmoney.account_service.controller.requestDto;
 
-public class TransferDto {
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class TransferDTO {
+    private String cvu;
+    private String alias;
+    private Double amount;
 }

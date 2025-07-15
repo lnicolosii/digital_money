@@ -1,7 +1,8 @@
 package com.digitalmoney.account_service.service;
 
 import com.digitalmoney.account_service.controller.requestDto.AccountUpdateDTO;
-import com.digitalmoney.account_service.controller.requestDto.DepositDto;
+import com.digitalmoney.account_service.controller.requestDto.DepositDTO;
+import com.digitalmoney.account_service.controller.requestDto.TransferDTO;
 import com.digitalmoney.account_service.dto.AccountDto;
 import com.digitalmoney.account_service.dto.TransactionDto;
 
@@ -16,7 +17,9 @@ public interface IAccountService {
 
     List<AccountDto> getAccounts();
 
-    TransactionDto depositMoney(Long accountId, DepositDto data);
+    TransactionDto depositMoney(Long accountId, DepositDTO data);
+
+    TransactionDto transferMoney(Long accountId, TransferDTO data);
 
     List<TransactionDto> getLastFiveTransactions(Long accountId);
 

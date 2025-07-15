@@ -36,8 +36,13 @@ public class Account {
     @JsonIgnore
     private List<Transaction> transactions;
 
-    public Account updateBalance(Double value) {
+    public Account addBalance(Double value) {
         this.balance = this.balance + value;
+        return this;
+    }
+
+    public Account removeBalance(Double value) {
+        this.balance = this.balance - value;
         return this;
     }
 }

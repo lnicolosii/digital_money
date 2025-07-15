@@ -87,3 +87,15 @@ services:
     restart: always
     networks:
       - digital-money
+
+  dp-backend:
+    build: dp-backend/
+    ports:
+      - '3000:3000'
+    environment:
+      REACT_APP_API_URL: http://gateway:3500
+    depends_on:
+      - gateway
+    restart: always
+    networks:
+      - digital-money

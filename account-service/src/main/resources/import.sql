@@ -3,21 +3,24 @@ INSERT INTO accounts (id, cvu, alias, balance, user_id) VALUES (null, '182814236
 INSERT INTO accounts (id, cvu, alias, balance, user_id) VALUES (null, '1824000364587587492222', 'test.account2.alias',100000.0, 2);
 
 -- Insert Transactions
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 100000.0, '2025-05-10 08:30:20', 'initial transaction', '1824000364587587492222', '1828142364587587492222', 'Transfer', 2);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 100000.0, '2025-05-10 08:30:20', 'received transaction', '1824000364587587492222', '1828142364587587492222', 'Deposit', 2);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 20000.0, '2025-05-12 14:30:20', 'payment transaction', '1828142364587587492222', '1824000364587587492222', 'Transfer', 1);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 20000.0, '2025-05-12 14:30:20', 'received transaction', '1828142364587587492222', '1824000364587587492222', 'Deposit', 1);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 5300.0, '2025-01-01 16:35:10', 'payment transaction', '1824000364587587492222', '1828142364587587492222', 'Deposit', 2);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 17223.0, '2025-07-01 10:02:00', 'payment transaction', '1824000364587587492222', '1828142364587587492222', 'Deposit', 2);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 112000.0, '2025-01-01 17:21:09', 'payment transaction', '1824000364587587492222', '1828142364587587492222', 'Deposit', 2);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 20000.0, '2025-02-09 12:45:00', 'payment transaction', '1824000364587587492222', '1828142364587587492222', 'Deposit', 2);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 6000.0, '2025-06-01 15:27:20', 'payment transaction', '1828142364587587492222', '1824000364587587492222', 'Transfer', 1);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 9500.0, '2025-06-02 12:55:20', 'payment transaction', '1828142364587587492222', '1824000364587587492222' , 'Transfer', 1);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 7650.0, '2025-06-07 11:27:20', 'payment transaction', '1828142364587587492222', '1824000364587587492222', 'Transfer', 1);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 17300.0, '2025-06-09 10:32:20', 'payment transaction', '1828142364587587492222','1824000364587587492222', 'Transfer', 1);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 19500.0, '2025-06-15 15:11:20', 'payment transaction', '1828142364587587492222','1824000364587587492222' , 'Transfer', 1);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 13450.0, '2025-06-19 13:00:20', 'payment transaction', '1828142364587587492222', '1824000364587587492222', 'Transfer', 1);
-INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 13450.0, '2025-06-22 10:54:10', 'payment transaction', '1828142364587587492222', '1824000364587587492222', 'Transfer', 1);
+INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 100000.0, '2025-05-10 08:30:20', 'received transfer', '1828142364587587492222', '1824000364587587492222', 'TransferOUT', 1);
+INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 100000.0, '2025-05-10 08:30:20', 'received transfer', '1828142364587587492222', '1824000364587587492222', 'TransferIN', 2);
+
+INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 15673.0, '2025-05-10 08:30:20', 'received transfer', '1824000364587587492222', '1828142364587587492222', 'TransferIN', 1);
+INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 15673.0, '2025-05-10 08:30:20', 'received transfer', '1824000364587587492222', '1828142364587587492222', 'TransferOUT', 2);
+
+INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 88943.0, '2025-05-10 08:30:20', 'received transfer', '1828142364587587492222', '1824000364587587492222', 'TransferOUT', 1);
+INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 88943.0, '2025-05-10 08:30:20', 'received transfer', '1828142364587587492222', '1824000364587587492222', 'TransferIN', 2);
+
+INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 98732.0, '2025-05-10 08:30:20', 'received transfer', '1824000364587587492222', '1828142364587587492222', 'TransferIN', 1);
+INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 98732.0, '2025-05-10 08:30:20', 'received transfer', '1824000364587587492222', '1828142364587587492222', 'TransferOUT', 2);
+
+INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 9000.0, '2025-05-10 08:30:20', 'received transfer', '1828142364587587492222', '1824000364587587492222', 'TransferOUT', 1);
+INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 9000.0, '2025-05-10 08:30:20', 'received transfer', '1828142364587587492222', '1824000364587587492222', 'TransferIN', 2);
+
+INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 25000.0, '2025-05-10 08:30:20', 'received transfer', '1824000364587587492222', '1828142364587587492222', 'TransferIN', 1);
+INSERT INTO transactions (id, amount, realization_date, description, origin, destination, transaction_type, account_id) VALUES (null, 25000.0, '2025-05-10 08:30:20', 'received transfer', '1824000364587587492222', '1828142364587587492222', 'TransferOUT', 2);
+
 --
 ---- Insert Card
 INSERT INTO cards (id, number, holder, expiration_date, cvv, bank, card_type, network, account_id) VALUES (null, 5412873403403000, 'User Test', '05/2027', 480, 'Mercado Pago', 'Credit', "Mastercard", 1);
